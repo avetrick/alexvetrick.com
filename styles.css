@@ -8,7 +8,6 @@
   font-weight: 400;
   font-style: normal;
 }
-
 .josefin-sans-Bold-700 {
   font-family: "Josefin Sans", sans-serif;
   font-optical-sizing: auto;
@@ -20,55 +19,46 @@
   font-weight: 100;
   font-style: normal;
 }
-
 .lato-light {
   font-family: "Lato", sans-serif;
   font-weight: 300;
   font-style: normal;
 }
-
 .lato-regular {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
-
 .lato-bold {
   font-family: "Lato", sans-serif;
   font-weight: 700;
   font-style: normal;
 }
-
 .lato-black {
   font-family: "Lato", sans-serif;
   font-weight: 900;
   font-style: normal;
 }
-
 .lato-thin-italic {
   font-family: "Lato", sans-serif;
   font-weight: 100;
   font-style: italic;
 }
-
 .lato-light-italic {
   font-family: "Lato", sans-serif;
   font-weight: 300;
   font-style: italic;
 }
-
 .lato-regular-italic {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-style: italic;
 }
-
 .lato-bold-italic {
   font-family: "Lato", sans-serif;
   font-weight: 700;
   font-style: italic;
 }
-
 .lato-black-italic {
   font-family: "Lato", sans-serif;
   font-weight: 900;
@@ -76,7 +66,9 @@
 }
 
 
- body {
+
+/* Main Styles*/
+body {
             font-family: "Lato", sans-serif;
 	 		font-weight: 300;
             margin: 0;
@@ -84,7 +76,7 @@
             box-sizing: border-box;
             color: #333;
         }
-        nav {
+nav {
             background: #141414;
             color: #fff;
             padding: 1rem 2rem;
@@ -92,26 +84,27 @@
             justify-content: space-between;
             align-items: center;
         }
-        nav .logo {
+nav .logo {
             font-size: 1.5rem;
-            font-weight: bold;
+           	font-family: "Josefin Sans", sans-serif;
+			font-weight: 700;
         }
-        nav .menu {
+nav .menu {
             display: flex;
             gap: 1rem;
         }
-        nav .menu a {
+nav .menu a {
             color: #fff;
             text-decoration: none;
             font-size: 1rem;
             padding: 0.5rem 1rem;
             border-radius: 5px;
         }
-        nav .menu a:hover {
+nav .menu a:hover {
             background: #f90;
             color: #141414;
         }
-        .hero {
+.hero {
             background: url('Image Assets/Edits-145.jpg') no-repeat center center/cover;
             color: #fff;
             text-align: center;
@@ -122,21 +115,21 @@
             justify-content: center;
             height: 80vh;
         }
-        .hero h1 {
+.hero h1 {
             font-size: 4rem;
             margin: 0.5rem 0;
 			letter-spacing: 3px;
 			font-family: "Josefin Sans", sans-serif;
 			font-weight: 700;
         }
-        .hero p {
+.hero p {
             font-size: 1.5rem;
             margin: 1rem 0;
         }
-        .hero .actions {
+.hero .actions {
             margin-top: 2rem;
         }
-        .hero .actions a {
+.hero .actions a {
             margin: 0 1rem;
             padding: 1rem 2rem;
             background: #f90;
@@ -145,7 +138,7 @@
             border-radius: 5px;
             font-size: 1.2rem;
         }
-        .hero .actions a:hover {
+.hero .actions a:hover {
             background: #fff;
             color: #141414;
         }
