@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BALKY Studio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #333;
+        }
+        header {
+            background: #141414;
+            color: #fff;
+            padding: 2rem;
+            text-align: center;
+        }
+        header img {
+            max-width: 100px;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin: 0.5rem 0;
+        }
+        header p {
+            font-size: 1.2rem;
+        }
+        header .actions {
+            margin-top: 1rem;
+        }
+        header .actions a {
+            margin: 0 1rem;
+            padding: 0.5rem 1rem;
+            background: #f90;
+            color: #141414;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .section {
+            padding: 2rem;
+            text-align: center;
+        }
+        .section:nth-child(even) {
+            background: #f4f4f4;
+        }
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .section p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.2rem;
+            line-height: 1.5;
+        }
+        .pricing-table, .projects {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .pricing-table .card, .projects .card {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            flex: 1 1 200px;
+            max-width: 300px;
+            background: #fff;
+            text-align: left;
+        }
+        .pricing-table .card h3, .projects .card h3 {
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+        .projects img {
+            width: 100%;
+            height: auto;
+        }
+        .faq {
+            text-align: left;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .faq details {
+            margin-bottom: 1rem;
+        }
+        footer {
+            background: #141414;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 2rem;
+        }
+        @media (max-width: 768px) {
+            .pricing-table, .projects {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="BALKY Logo">
+        <h1>BALKY</h1>
+        <p>Design Essentials Made Simple</p>
+        <div class="actions">
+            <a href="#contact">Contact Us</a>
+            <a href="#pricing">See Pricing</a>
+        </div>
+    </header>
+
+    <section class="section">
+        <h2>Why BALKY?</h2>
+        <p>We recognized a gap in the creative industry—small businesses often struggle to find high-quality, yet affordable, design solutions. That’s why we exist.</p>
+    </section>
+
+    <section class="section" id="pricing">
+        <h2>Design Faster. Save More. Design Faster.</h2>
+        <div class="pricing-table">
+            <div class="card">
+                <h3>Closet Creations™</h3>
+                <p>Details</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="card">
+                <h3>Nightfall VC™</h3>
+                <p>Details</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="card">
+                <h3>2ET Labs™</h3>
+                <p>Details</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="card">
+                <h3>Otherworld™</h3>
+                <p>Details</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="card">
+                <h3>Shaukia™</h3>
+                <p>Details</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="card">
+                <h3>Fluid22™</h3>
+                <p>Details</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="card">
+                <h3>ERA Fx™</h3>
+                <p>Details</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="card">
+                <h3>VESYL™</h3>
+                <p>Details</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Branding</h2>
+        <p>A curated selection of archive print and digital products from the BALKY team.</p>
+        <div class="projects">
+            <div class="card">
+                <h3>Branding</h3>
+                <img src="branding.jpg" alt="Branding">
+                <p>Details about branding projects</p>
+            </div>
+            <div class="card">
+                <h3>Web Design</h3>
+                <img src="web-design.jpg" alt="Web Design">
+                <p>Details about web design projects</p>
+            </div>
+            <div class="card">
+                <h3>Product Design</h3>
+                <img src="product-design.jpg" alt="Product Design">
+                <p>Details about product design projects</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Fair & Transparent Pricing</h2>
+        <form>
+            <label for="branding">Type of Branding Required:</label>
+            <select id="branding" name="branding">
+                <option value="basic">Basic Visual Identity</option>
+                <option value="standard">Standard Visual Identity</option>
+                <option value="complete">Complete Visual Identity</option>
+            </select>
+
+            <label for="package">Project Urgency:</label>
+            <select id="package" name="package">
+                <option value="relaxed">Relaxed</option>
+                <option value="standard">Standard</option>
+                <option value="urgent">Urgent</option>
+            </select>
+
+            <label for="deliverables">Deliverables:</label>
+            <select id="deliverables" name="deliverables">
+                <option value="branding">Complete Branding Package</option>
+                <option value="web">Web Design Package</option>
+                <option value="product">Product Design Package</option>
+            </select>
+
+            <button type="submit">Get Quote</button>
+        </form>
+    </section>
+
+    <section class="section">
+        <h2>FAQs</h2>
+        <div class="faq">
+            <details>
+                <summary>What services does BALKY Studio offer?</summary>
+                <p>Details about the services.</p>
+            </details>
+            <details>
+                <summary>How does BALKY Essential differ from BALKY?</summary>
+                <p>Details about the difference.</p>
+            </details>
+            <details>
+                <summary>How long does a project typically take?</summary>
+                <p>Details about project timeline.</p>
+            </details>
+            <details>
+                <summary>Is the pricing calculated on your website accurate?</summary>
+                <p>Details about pricing accuracy.</p>
+            </details>
+            <details>
+                <summary>Do you offer any payment plans?</summary>
+                <p>Details about payment plans.</p>
+            </details>
+            <details>
+                <summary>What kind of clients can I expect from BALKY?</summary>
+                <p>Details about clients.</p>
+            </details>
+            <details>
+                <summary>Do you outsource any work?</summary>
+                <p>Details about outsourcing.</p>
+            </details>
+            <details>
+                <summary>How do I get started?</summary>
+                <p>Details about getting started.</p>
+            </details>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 BALKY Studio. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
