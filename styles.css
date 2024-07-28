@@ -65,257 +65,187 @@
   font-style: italic;
 }
 
+/* colors 
+	Moody Blues:
+		Midnight blue: 	#1A1D29
+		Charcoal Gray: 	#3D3F4A
+		Slate Blue: 	#7D8491
+		Silver:  		#B1B2B5
+		Yellow: 		#F3E600
+*/
 
 
 /* Main Styles*/
-body {
+html {
+  scroll-behavior: smooth;
+}
+
+ body {
             font-family: "Lato", sans-serif;
-	 		font-weight: 300;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            color: #333;
+  			font-weight: 300;
+ 			font-style: normal;
+            color: #3D3F4A;
+            background-color: #1A1D29;
         }
-nav {
-            background: #141414;
-            color: #fff;
-            padding: 1rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+
+
+        .navbar {
+            background-color: #1A1D29;
         }
-nav .logo {
-            font-size: 1.5rem;
-           	font-family: "Josefin Sans", sans-serif;
-			font-weight: 700;
+        .navbar-brand, .nav-link {
+            color: #fff !important;
+			font-family: "Josefin Sans", sans-serif;
+  			font-optical-sizing: auto;
+ 			font-weight: 700;
+  			font-style: normal;
         }
-nav .menu {
-            display: flex;
-            gap: 1rem;
+        .nav-link:hover {
+            background-color: #F3E600;
+            color: #1A1D29 !important;
         }
-nav .menu a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 1rem;
-            padding: 0.5rem 1rem;
-            border-radius: 5px;
-        }
-nav .menu a:hover {
-            background: #f90;
-            color: #141414;
-        }
-.hero {
+
+
+        .hero {
             background: url('Image Assets/Edits-145.jpg') no-repeat center center/cover;
             color: #fff;
             text-align: center;
-            padding: 5rem 2rem;
+            padding: 5rem 1rem;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             height: 80vh;
         }
-.hero h1 {
+        .hero h1 {
+			font-family: "Josefin Sans", sans-serif;
+  			font-optical-sizing: auto;
+ 			font-weight: 700;
+  			font-style: normal;
             font-size: 4rem;
             margin: 0.5rem 0;
-			letter-spacing: 3px;
-			font-family: "Josefin Sans", sans-serif;
-			font-weight: 700;
         }
-.hero p {
+        .hero p {
             font-size: 1.5rem;
             margin: 1rem 0;
         }
-.hero .actions {
-            margin-top: 2rem;
-        }
-.hero .actions a {
+        .hero .btn {
             margin: 0 1rem;
-            padding: 1rem 2rem;
-            background: #f90;
-            color: #141414;
-            text-decoration: none;
-            border-radius: 5px;
+            background-color: transparent;
+            color: #fff;
+            border: none;
             font-size: 1.2rem;
+			padding: 0.75rem 1.5rem;
         }
-.hero .actions a:hover {
-            background: #fff;
-            color: #141414;
+        .hero .btn:hover {
+            background-color: #F3E600;
+            color: #1A1D29;
         }
 
-.why-we-exist {
-            background: #FF6633;
+
+
+        .why-we-exist {
+            background-color: #7D8491;
             color: #000;
             padding: 4rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            text-align: left;
-            flex-wrap: wrap;
         }
-.why-we-exist .content {
-            max-width: 60%;
-        }
-.why-we-exist h2 {
+        .why-we-exist h2 {
             font-size: 1rem;
             font-weight: bold;
-            margin-bottom: 1rem;
-			font-family: "Josefin Sans", sans-serif;
         }
-.why-we-exist p {
+        .why-we-exist p {
             font-size: 2rem;
             line-height: 1.5;
         }
-.why-we-exist .extra-info {
-            max-width: 30%;
+        .why-we-exist .extra-info p {
             font-size: 1rem;
         }
-.why-we-exist .extra-info p {
-            margin-top: 0;
-        }
-.why-we-exist .decor {
-            display: flex;
-            justify-content: space-between;
+        .why-we-exist .decor {
+            font-size: 4rem;
+            text-align: center;
             margin-top: 2rem;
         }
-.why-we-exist .decor div {
-            font-size: 4rem;
-            margin: 0 1rem;
-        }
-.why-we-exist {
-                flex-direction: column;
-                text-align: center;
-            }
-.why-we-exist .content, .why-we-exist .extra-info {
-                max-width: 100%;
-                margin: 1rem 0;
-            }
-.why-we-exist .decor {
-                flex-direction: column;
-                align-items: center;
-            }
-.why-we-exist .decor div {
-                margin: 1rem 0;
-            }
 
 
-.services {
-            background: #141414;
+
+        .services {
+            background-color: #1A1D29;
             color: #fff;
             padding: 4rem 2rem;
         }
-.services .section-header {
+        .services .section-header {
             font-size: 1rem;
             font-weight: bold;
             margin-bottom: 2rem;
-            text-align: left;
             color: #fff;
         }
-.service {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 4rem;
-        }
-.service:nth-child(even) {
-            flex-direction: row-reverse;
-        }
-.service .text {
-            max-width: 50%;
-        }
-.service h3 {
+        .service h3 {
             font-size: 2rem;
             margin-bottom: 1rem;
             color: #fff;
         }
-.service p {
+        .service p {
             font-size: 1rem;
             line-height: 1.5;
             color: #aaa;
         }
-.service a {
-            display: inline-block;
+        .service .btn {
             margin-top: 1rem;
-            padding: 0.5rem 1rem;
-            background: #f90;
-            color: #141414;
-            text-decoration: none;
-            border-radius: 5px;
+            background-color: #f90;
+            color: #1A1D29;
+            border: none;
             font-size: 1rem;
+            padding: 0.5rem 1rem;
         }
-.service a:hover {
-            background: #fff;
-            color: #141414;
+        .service .btn:hover {
+            background-color: #fff;
+            color: #1A1D29;
         }
-.service img {
-            max-width: 40%;
-            border-radius: 10px;
+        .awards {
+            background-color: #1A1D29;
+            color: #fff;
+            padding: 2rem 2rem;
         }
-.service {
-                flex-direction: column;
-                text-align: center;
-            }
-.service:nth-child(even) {
-                flex-direction: column;
-            }
-.service .text, .service img {
-                max-width: 100%;
-            }
-.awards {
-                flex-direction: column;
-                text-align: center;
-            }
-.awards .header {
+        .awards .header {
             font-size: 1rem;
             font-weight: bold;
             margin-bottom: 2rem;
-            text-align: left;
             color: #fff;
         }
-.awards ul {
+        .awards ul {
             list-style: none;
             padding: 0;
         }
-.awards li {
+        .awards li {
             font-size: 1rem;
             margin-bottom: 1rem;
             color: #aaa;
         }
-.awards li a {
+        .awards li a {
             color: #f90;
             text-decoration: none;
         }
-.awards li a:hover {
+        .awards li a:hover {
             text-decoration: underline;
         }
-.awards {
-            background: #141414;
-            color: #fff;
-            padding: 2rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            text-align: left;
-        }
-
 
 
         @media (max-width: 768px) {
-            .hero {
-                padding: 3rem 1rem;
-                height: auto;
-            }
             .hero h1 {
                 font-size: 2.5rem;
             }
             .hero p {
                 font-size: 1.2rem;
             }
-            .hero .actions a {
-                font-size: 1rem;
-                padding: 0.5rem 1rem;
+            .why-we-exist p {
+                font-size: 1.5rem;
+            }
+            .services .service {
+                flex-direction: column;
+                text-align: center;
+            }
+            .service img {
+                max-width: 100%;
+                margin-top: 1rem;
             }
         }
-
-
 
