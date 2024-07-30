@@ -148,8 +148,12 @@
             padding: 4rem 2rem;
         }
         .why-we-exist h2 {
+            font-family: "Josefin Sans", sans-serif;
+  			font-optical-sizing: auto;
+ 			font-weight: 700;
+  			font-style: normal;
             font-size: 1rem;
-            font-weight: bold;
+            margin: 0.5rem 0;
         }
         .why-we-exist p {
             font-size: 2rem;

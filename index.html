@@ -25,7 +25,7 @@
                 <a class="nav-link" href="#pricing">Portfolio</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#contact">Socials</a>
@@ -38,20 +38,24 @@
     <h1>ALEX VETRICK</h1>
    <!-- <p>Designer | Photographer | Developer</p> -->
     <div class="mt-4">
-        <a href="#why-we-exist" class="btn btn-primary" data-kt-scroll-toggle>Designer</a>|
+        <a href="#Designer" class="btn btn-primary">Designer</a>|
         <a href="#pricing" class="btn btn-primary">Photographer</a>|
 		<a href="#pricing" class="btn btn-primary">Developer</a>
     </div>
 </section>
 
-<section class="why-we-exist container-fluid">
+	
+
+<section id="about" class="why-we-exist container-fluid">
     <div class="row">
-        <div class="col-md-8">
-            <h2>00.ABOUT ME&nbsp;</h2>
-            <p>My name is Alex Vetrick and I am a graphic designer, augmented and virtual reality content creator and developer. I use new and traditional mediums to create interesting and interactive art. My past job experiences with NASA and Oculus have added valuable UX/UI skills to my process. I strive to push the limits of technology into my 3D modeling and packaging design. I love to expand on what is considered conventional design with AR/VR tools. I bring an extra dimension to design no matter what the job.</p>
+      <div class="col-md-8">
+        <h2>01. About&nbsp;</h2>
+          <p>I noticed a gap in the creative industry where small businesses often struggle to find high quality, yet affordable, design solutions. That's why I'm here; to provide exceptional, accessible creative services tailored to your needs.</p>
         </div>
         <div class="col-md-4 extra-info">
-            <p>We offer a curated suite of design services specifically tailored for the small business owner. From web design to visual identity, we make it simple for you to establish a robust online presence without the premium price tag.</p>
+            <p>I'm a versatile creative professional with a passion for all things design and technology. As a graphic designer, 3D modeler, photographer, and developer, I bring a unique blend of skills to every project I tackle.<br>
+			My expertise spans logo design, branded marketing campaigns, product and portrait photography, and editing promotional videos. I also create custom 3D models, engaging websites, and immersive virtual reality experiences.<br>
+			Whether you're looking for a fresh visual identity, stunning photography, or innovative digital experiences, I'm here to help bring your vision to life.</p>
         </div>
     </div>
     <div class="decor row">
@@ -60,8 +64,9 @@
     </div>
 </section>
 
+
 <section class="services container-fluid">
-    <div class="section-header">02.SERVICES & CAPABILITIES</div>
+    <div class="section-header">02. Portfolio & Services</div>
     <div class="service row">
         <div class="text col-md-6">
             <h3>Branding</h3>
@@ -95,16 +100,27 @@
 </section>
 
 <section class="awards container-fluid">
-    <div class="header">02-2. AWARDS & MENTIONS</div>
+    <div class="header">03. Additional Links</div>
     <ul class="list-unstyled">
-        <li><a href="#award1">Awwwards</a> 13</li>
-        <li><a href="#award2">Muzli Feature</a> 12</li>
-        <li><a href="#award3">Lapa Ninja Mention</a> 11</li>
+        <li><a href="#award1">link here</a> 13</li>
+        <li><a href="#award2">link here</a> 12</li>
+        <li><a href="#award3">link here</a> 11</li>
     </ul>
 </section>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!--Smooth scrolling script	-->
+	<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+	<script>
+	var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 600,
+	speedAsDuration: true
+});
+	</script>
+
+
 </body>
 </html>
